@@ -23,7 +23,7 @@ public:
         // An ending (0 choices) needs no slots at all.
         // Every slot must start out empty.
 
-        if (numChoices_ > 0) {
+        if (numChoices_ > 0 && numChoices_ <= MAX_CHOICES) {
             choices_ = new Scene<T>*[numChoices_];
 
             for (int i = 0; i < numChoices_; ++i) {
