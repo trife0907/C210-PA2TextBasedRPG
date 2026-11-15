@@ -51,15 +51,15 @@ private:
             return 0;
         }
 
-        int maxHeight = -1; // Initial value
+        int maxChildHeight = -1; // Initial value
         for (int i = 0; i < scene->getNumChoices(); i++) {
-            int height = height(scene->getChoice(i)); // Recursive case
+            int childHeight = height(scene->getChoice(i)); // Recursive case
 
-            if (height > maxHeight) // Keep only the greatest height so far
-                maxHeight = height;
+            if (childHeight > maxChildHeight) // Keep only the greatest height so far
+                maxChildHeight = childHeight;
         }
 
-        return maxHeight + 1; // +1 to account for the initial -1
+        return maxChildHeight + 1; // +1 to account for the initial -1
     }
 
 public:
