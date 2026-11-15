@@ -116,7 +116,7 @@ Scene<Moment>* Adventure::readScene(std::ifstream& in, const std::string& label)
         return nullptr;
     int choices = std::stoi(choicesString);
     if (choices < 0 || choices > Scene<Moment>::MAX_CHOICES) {
-        std::cout << "Error: scene \"" << scene << "\" has" << choices << "choices. The limit is 3." << std::endl;
+        std::cout << "Error: scene \"" << scene << "\" has " << choices << " choices. The limit is 3." << std::endl;
         return nullptr;
     }
 
@@ -126,7 +126,7 @@ Scene<Moment>* Adventure::readScene(std::ifstream& in, const std::string& label)
     for (int i = 0; i < choices; i++) { // Build each child scene recursively
         std::string choiceLabel;
 
-        if (!readField(in, "CHOICE", choiceLabel)) {
+        if (!readField(in, "LABEL", choiceLabel)) {
             delete current;
             return nullptr;
         }

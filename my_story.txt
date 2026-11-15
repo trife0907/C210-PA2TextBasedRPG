@@ -1,6 +1,90 @@
-START_HP 10
-SCENE Replace this file with your own story.
+START_HP 100
+SCENE You are playing Jett on Ascent and your whole team just died rushing A. The spike is sitting in A main and now its a 1v3. Your Reyna says "just clutch." Thanks for the words of encouragement, Reyna.
 HP 0
 LOOT 0
-ITEM none
-CHOICES 0
+ITEM Classic
+CHOICES 3
+LABEL Grab the gun skin in A main
+  SCENE There is a Prime Vandal on the floor. You get tagged picking it up but the skin is lowkey worth it.
+  HP -20
+  LOOT 8
+  ITEM Prime Vandal
+  CHOICES 2
+  LABEL Wait theres an Operator too
+    SCENE You stop for the Operator and get headshot while looking at the floor. Bro, you were literally skin-shopping in a 1v3. Round lost, GG.
+    HP -90
+    LOOT 10
+    ITEM Operator
+    CHOICES 0
+  LABEL Keep the Vandal and save
+    SCENE You run back to spawn and save the Vandal. Your team is mad, but at least you have a gun for next round.
+    HP 0
+    LOOT 1
+    ITEM none
+    CHOICES 0
+LABEL Smoke the entrance and actually try to win
+  SCENE You smoke the chokepoint and dash onto site. Omg, this might actually be winnable.
+  HP 0
+  LOOT 2
+  ITEM Vandal
+  CHOICES 2
+  LABEL Swing heaven immediately
+    SCENE You wide swing heaven without checking anything else, and you get caught in a crossfire from the corners. Yeah idk what you're doing. Nice try.
+    HP -100
+    LOOT 4
+    ITEM none
+    CHOICES 0
+  LABEL Wait and listen for footsteps
+    SCENE You hear someone pushing through the smoke and get the kill. They tag you first, but now its a 1v2.
+    HP -15
+    LOOT 1
+    ITEM none
+    CHOICES 2
+    LABEL Pick up the spike
+      SCENE You grab the spike behind cover. Your dead teammates are all giving different callouts, so you mute them all.
+      HP 0
+      LOOT 2
+      ITEM Spike
+      CHOICES 2
+      LABEL Plant behind generator
+        SCENE You get the spike down and win a fight against the player coming from Tree. You took a little damage, but now it's a 1v1 scenario.
+        HP -10
+        LOOT 1
+        ITEM none
+        CHOICES 2
+        LABEL Play time and peek when they tap
+          SCENE You wait for the defuse tap to peek, and get the last kill with HP to spare. CLUTCH. Reyna says "finally" after doing absolutely nothing.
+          HP -10
+          LOOT 5
+          ITEM none
+          CHOICES 0
+        LABEL Swing for the clip
+          SCENE You swing before they even touch the spike and get one tapped. Reyna screams at you through the mic.
+          HP -100
+          LOOT 2
+          ITEM none
+          CHOICES 0
+      LABEL Forget planting and hunt for kills
+        SCENE You chase footsteps into Tree and get swung by both players. You had spike the entire time bro. ???
+        HP -100
+        LOOT 3
+        ITEM none
+        CHOICES 0
+    LABEL Go look for the flanker instead
+      SCENE You turn around to check flank and someone swings from site. Somehow you were looking everywhere except where the enemy was. Unlucky tbh.
+      HP -90
+      LOOT 1
+      ITEM none
+      CHOICES 0
+LABEL Rotate to B without the spike
+  SCENE You make it halfway through mid before remembering the spike is still on A. Reyna tells you to uninstall the game.
+  HP 0
+  LOOT 1
+  ITEM none
+  CHOICES 1
+  LABEL Go back for it
+    SCENE You sprint back with your knife out and get killed in Mid. Next time, maybe bring the one thing you need to win the round. GG.
+    HP -100
+    LOOT 1
+    ITEM none
+    CHOICES 0
